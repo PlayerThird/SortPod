@@ -5,16 +5,15 @@ using System.Threading.Tasks.Dataflow;
 int[] arr = { 0, 2, 3, 2, 1, 5, 9, 1, 1, 7, 3, 8, 3, 7, 5, 2, 6, 8, 1 };
 int[] arr2 = { 0, 2, 4, 10, 20, 5, 6, 1, 2 };
 int[] arr3 = { -10, -5, -9, 10, 0, 2, 5, 1, 3,1,0,1 };
+
 CountingSort(arr);
 Console.WriteLine(string.Join(";", arr));
 
 arr2 = CountingSortExtended(arr2);
 Console.WriteLine(string.Join(";", arr2));
+
 arr3 = CountingSortExtended(arr3);
 Console.WriteLine(string.Join(";", arr3));
-
-
-
 
 Console.ReadLine();
 
